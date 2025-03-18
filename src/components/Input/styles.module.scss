@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
+}
+
+.inputBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #DFE3E6;
+  border-radius: 3px;
+  background: white;
+  transition: border 0.3s;
+
+  &__error {
+    border-color: #EA0029;
+  }
+
+  &__disabled {
+    background: #f0f0f0;
+  }
+}
+
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 11px 12px;
+  background: transparent;
+
+  &::placeholder {
+    color: #BEC5CC;
+  }
+}
+
+.errorMessage {
+  display: block;
+  text-align: left;
+  color: #EA0029;
+  font-size: 12px;
+  margin-top: 4px;
+}

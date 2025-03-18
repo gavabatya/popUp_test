@@ -1,0 +1,1 @@
+export { PaymentCalculationContent } from './PaymentCalculationContent';

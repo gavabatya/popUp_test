@@ -1,0 +1,33 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 6px 12px;
+  background-color: #FF5E56;
+  border-radius: 50px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  width: auto;
+  white-space: nowrap;
+  font-size: 14px;
+
+  &:hover {
+    background-color: #DFE3E6;
+    color: #000000;
+  }
+
+  &__notActive {
+    transform: scale(0.98);
+    background-color: #EEF0F2;
+    color: #000000;
+  }
+
+  &__disabled {
+    pointer-events: none;
+    border: none;
+    background: #EEF0F2;
+    color: #000000;
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "semi": true,
+  "trailingComma": "all",
+  "printWidth": 80,
+  "singleQuote": true,
+  "endOfLine": "lf",
+  "tabWidth": 2,
+  "cssDeclarationSorterOrder": "smacss",
+  "overrides": [
+    {
+      "files": [
+        "*.scss",
+        "*.css"
+      ],
+      "options": {
+        "singleQuote": true
+      }
+    }
+  ],
+  "plugins": [
+    "prettier-plugin-css-order"
+  ]
+}

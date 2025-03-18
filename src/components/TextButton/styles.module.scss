@@ -1,0 +1,24 @@
+.textButton {
+  height: 24px;
+  max-width: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #EA0029;
+  transition: background 400ms;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+
+  &:hover {
+    color: #F53A31;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

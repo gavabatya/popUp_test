@@ -1,0 +1,156 @@
+.container {
+  margin: 32px;
+  max-width: 552px;
+  max-height: 625px;
+
+  @media (max-width: 768px) {
+    max-width: none;
+    max-height: none;
+    height: 100vh;
+    margin: 16px;
+  }
+
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 28px;
+    font-weight: 600;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__closeIcon {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-image: url('src/assets/closeIcon.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 16px;
+
+    @media (max-width: 768px) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__textBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #808080;
+
+    @media (max-width: 768px) {
+      gap:0;
+      line-height: 16px;
+      font-size: 12px;
+      margin-top: 16px;
+    }
+  }
+
+  &__inputBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+
+    @media (max-width: 768px) {
+      margin-top: 8px;
+    }
+  }
+
+  &__checkBoxContainer {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    margin-top: 16px;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    &__checkTitle {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 24px;
+    }
+  }
+
+  &__checkBlock {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__buttonContainer {
+    width: 100%;
+    margin-top: 32px;
+
+    &__button {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 12px;
+      z-index: 1000;
+    }
+  }
+
+  &__resultBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 18px;
+    gap: 8px;
+    @media (max-width: 768px) {
+      margin-top: 16px;
+    }
+
+    &__resultInfo {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    &__tagBlock {
+      display: flex;
+      gap: 6px;
+      margin-top: 11px;
+    }
+
+    &__payment {
+      flex-grow: 1;
+      margin-top: 31px;
+      font-size: 24px;
+      font-weight: 500;
+
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+  }
+}
